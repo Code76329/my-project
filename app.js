@@ -1,2 +1,3 @@
-const user={name:"ali",age:20}
-console.log("hello node")
+const fs = require("node:fs");
+const filecontent = fs.readFileSync("./test.txt", "utf8");
+console.log("filecontent", filecontent);
